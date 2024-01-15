@@ -3,7 +3,7 @@ ini_set('display_errors', false);
 
 $title = "Game Charts - Top and Trending Games Statistics";
 $description = "GameCharts. This page shows Top Games and Trending of Games by current players or average players. You can see the summary of individual game of each platfrom.";
-$canonical = "https://gamecharts.org";
+$canonical = "http://gamecharts.local";
 $trending = array();
 $trending_average = array();
 $topdata = array();
@@ -108,7 +108,7 @@ $stores = $aux;
         <!-- <span class="game-platforms-menu col-12 col-md-6"> -->
             <?php
             foreach ($stores as $store) {
-                echo('<div class="col-6 col-md-2 text-center"><a href="https://gamecharts.org/'.$store->Store.'"><img height="45px" src="'.$store->Splash.'" alt="'.$store->Store.'" style="max-width:100%; max-height:45px;"/></a></div>');
+                echo('<div class="col-6 col-md-2 text-center"><a href="http://gamecharts.local/'.$store->Store.'"><img height="45px" src="'.$store->Splash.'" alt="'.$store->Store.'" style="max-width:100%; max-height:45px;"/></a></div>');
             }
             ?>
             <!-- </span> -->
@@ -158,9 +158,9 @@ $stores = $aux;
                                                                 ?>
                                                                 <tr>
                                                                     <td><a class="text-dark"
-                                                                        href="https://gamecharts.org/<?php echo($data["store"])?>/<?php echo $data['app_id']?>"><?php echo $data['name']?></a>
+                                                                        href="http://gamecharts.local/<?php echo($data["store"])?>/<?php echo $data['app_id']?>"><?php echo $data['name']?></a>
                                                                     </td>
-                                                                    <td><a href="https://gamecharts.org/<?php echo($data["store"]); ?>"><img class="lazyload blur-up" width="100%" height="100%"
+                                                                    <td><a href="http://gamecharts.local/<?php echo($data["store"]); ?>"><img class="lazyload blur-up" width="100%" height="100%"
                                                                         data-src="<?php echo($stores[$data["store"]]->Splash); ?>"
                                                                         alt="<?php echo($stores[$data["store"]]->Store)?>"
                                                                         style="max-width:75px; max-height:30px" /></a>
@@ -204,7 +204,7 @@ $stores = $aux;
                                 <div class="row ml-0 mr-1">
                                     <div style="display: inline-block;padding: 0" class="col-12 col-md-5">
                                         <a 
-                                        href="https://gamecharts.org/<?php echo($data['store']); ?>/<?php echo($data['app_id']); ?>"><img class="lazyload blur-up" width="100%" height="100%"
+                                        href="http://gamecharts.local/<?php echo($data['store']); ?>/<?php echo($data['app_id']); ?>"><img class="lazyload blur-up" width="100%" height="100%"
                                         data-src="<?php echo($i_game[0]->Splash);?>"
                                         alt="<?php echo($data['name']); ?>" /></a>
                                     </div>
@@ -258,10 +258,10 @@ $stores = $aux;
                                                     <td><?php echo $index++?>.
                                                     </td>
                                                     <td><a class="text-dark"
-                                                        href="https://gamecharts.org/<?php echo($data->Store); ?>/<?php echo($data->NameSEO); ?>"><?php echo $data->Name?></a>
+                                                        href="http://gamecharts.local/<?php echo($data->Store); ?>/<?php echo($data->NameSEO); ?>"><?php echo $data->Name?></a>
                                                     </td>
                                                     <td><a
-                                                        href="https://gamecharts.org/<?php echo($data->Store); ?>"><img class="lazyload blur-up" width="100%" height="100%"
+                                                        href="http://gamecharts.local/<?php echo($data->Store); ?>"><img class="lazyload blur-up" width="100%" height="100%"
                                                         data-src="<?php echo($stores[$data->Store]->Splash); ?>"
                                                         alt="<?php echo($stores[$data->Store]->Store)?>"
                                                         style="max-width:75px; max-height:30px" /></a>
@@ -306,7 +306,7 @@ $stores = $aux;
                 <div class="row ml-0 mr-1">
                     <div style="display: inline-block;padding: 0" class="col-12 col-md-5">
                         <a
-                        href="https://gamecharts.org/<?php echo($data->Store); ?>/<?php echo($data->NameSEO); ?>"><img class="lazyload blur-up" width="100%" height="100%"
+                        href="http://gamecharts.local/<?php echo($data->Store); ?>/<?php echo($data->NameSEO); ?>"><img class="lazyload blur-up" width="100%" height="100%"
                         data-src="<?php echo($i_game[0]->Splash);?>"
                         alt="<?php echo($data->Name);?>" /></a>
                     </div>
@@ -352,10 +352,10 @@ $stores = $aux;
                                     ?>
                                     <tr>
                                         <td><a class="text-dark"
-                                            href="https://gamecharts.org/<?php echo($data["store"])?>/<?php echo $data['app_id']?>"><?php echo $data['name']?></a>
+                                            href="http://gamecharts.local/<?php echo($data["store"])?>/<?php echo $data['app_id']?>"><?php echo $data['name']?></a>
                                         </td>
                                         <td><a
-                                            href="https://gamecharts.org/<?php echo($data["store"]); ?>"><img class="lazyload blur-up" width="100%" height="100%"
+                                            href="http://gamecharts.local/<?php echo($data["store"]); ?>"><img class="lazyload blur-up" width="100%" height="100%"
                                             data-src="<?php echo($stores[$data["store"]]->Splash); ?>"
                                             alt="<?php echo($stores[$data["store"]]->Store)?>"
                                             style="max-width:75px; max-height:30px" /></a>
@@ -401,7 +401,7 @@ $stores = $aux;
                 <div class="row ml-1 mr-1">
                     <div style="display: inline-block;padding: 0" class="col-12 col-md-5">
                         <a
-                        href="https://gamecharts.org/<?php echo($data['store']); ?>/<?php echo($data['app_id']); ?>"><img class="lazyload blur-up" width="100%" height="100%"
+                        href="http://gamecharts.local/<?php echo($data['store']); ?>/<?php echo($data['app_id']); ?>"><img class="lazyload blur-up" width="100%" height="100%"
                         data-src="<?php echo($i_game[0]->Splash);?>"
                         alt="<?php echo($data['name']); ?>" /></a>
                     </div>
@@ -454,10 +454,10 @@ $stores = $aux;
                                         <td><?php echo $index++?>.
                                         </td>
                                         <td><a class="text-dark"
-                                            href="https://gamecharts.org/<?php echo($data->Store); ?>/<?php echo($data->NameSEO); ?>"><?php echo $data->Name?></a>
+                                            href="http://gamecharts.local/<?php echo($data->Store); ?>/<?php echo($data->NameSEO); ?>"><?php echo $data->Name?></a>
                                         </td>
                                         <td><a
-                                            href="https://gamecharts.org/<?php echo($data->Store); ?>"><img class="lazyload blur-up" width="100%" height="100%"
+                                            href="http://gamecharts.local/<?php echo($data->Store); ?>"><img class="lazyload blur-up" width="100%" height="100%"
                                             data-src="<?php echo($stores[$data->Store]->Splash); ?>"
                                             style="max-width:75px; max-height:30px"
                                             alt="Go to <?php echo $data->Name?> site" /></a>
@@ -501,7 +501,7 @@ $stores = $aux;
                 <div class="row ml-0 mr-1">
                     <div style="display: inline-block;padding: 0" class="col-12 col-md-5">
                         <a
-                        href="https://gamecharts.org/<?php echo($data->Store); ?>/<?php echo($data->NameSEO); ?>"><img class="lazyload blur-up" width="100%" height="100%"
+                        href="http://gamecharts.local/<?php echo($data->Store); ?>/<?php echo($data->NameSEO); ?>"><img class="lazyload blur-up" width="100%" height="100%"
                         data-src="<?php echo($i_game[0]->Splash);?>"
                         alt="<?php echo($data->Name);?>" /></a>
                     </div>

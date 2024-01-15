@@ -213,25 +213,25 @@
    <meta name="keywards" content="plyer, game, chart, average, current, playerunknowns, 24-hours, platform, name, steam, idcgames, xbox, current players, average players, game chart, <?php echo($gameinfo_aux[0]->Name);?>" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- App favicon -->
-   <link rel="shortcut icon" href="https://gamecharts.org/assets/images/favicon.ico">
+   <link rel="shortcut icon" href="http://gamecharts.local/assets/images/favicon.ico">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-   <link rel="canonical" href="https://gamecharts.org/<?php echo "$source/" . $gameinfo_aux[0]->NameSEO;?>" />
+   <link rel="canonical" href="http://gamecharts.local/<?php echo "$source/" . $gameinfo_aux[0]->NameSEO;?>" />
    <meta name = "twitter:title" content="Game Charts Detail : <?php echo($gameinfo_aux[0]->Name); ?>">
    <meta name = "twitter:card" content="summary">
    <meta name = "twitter:site" content="@gamecharts">
    <meta name = "twitter:creator" content="@gamecharts">
    <meta name = "twitter:description" content="Game Detail Page. The name of this game is <?php echo($gameinfo_aux[0]->Name);?>  You will see more detailed info about this game in this page."/>
-   <meta name = "twitter:image" content="https://gamecharts.org/assets/images/logo-1.png"/>
+   <meta name = "twitter:image" content="http://gamecharts.local/assets/images/logo-1.png"/>
    <meta property = "og:type" content="website" />
-   <meta property = "og:url" content="https://gamecharts.org/<?php echo "$source/$subFolder";?>"/>
-   <meta property = "og:image" content="https://gamecharts.org/assets/images/logo-1.png"/>
+   <meta property = "og:url" content="http://gamecharts.local/<?php echo "$source/$subFolder";?>"/>
+   <meta property = "og:image" content="http://gamecharts.local/assets/images/logo-1.png"/>
    <meta property = "og:site_name" content="Gamecharts"/>
    <meta property = "og:title" content="Game Charts Detail : <?php echo($gameinfo_aux[0]->Name); ?>" />
    <meta property = "og:description" content="Game Detail Page. The name of this game is <?php echo($gameinfo_aux[0]->Name);?>  You will see more detailed info about this game in this page."/>
 
-   <link href="https://gamecharts.org/assets/css/icons.css" rel="stylesheet" type="text/css" />
-   <link href="https://gamecharts.org/assets/css/styleNew.css" rel="stylesheet" type="text/css" />
-   <link href="https://gamecharts.org/assets/css/custom-highcharts.css" rel="stylesheet" type="text/css" />
+   <link href="http://gamecharts.local/assets/css/icons.css" rel="stylesheet" type="text/css" />
+   <link href="http://gamecharts.local/assets/css/styleNew.css" rel="stylesheet" type="text/css" />
+   <link href="http://gamecharts.local/assets/css/custom-highcharts.css" rel="stylesheet" type="text/css" />
    <!-- Global site tag (gtag.js) - Google Analytics -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43282477-5"></script>
    <script>
@@ -264,14 +264,14 @@
                <?php
                foreach($stores as $store) {
                   if ($store->Store == $source){
-                        echo('<li><a href="https://gamecharts.org/'.$store->Store.'"><img src="'.$store->Splash. '" alt="'.$store->Store.' logo"/></a> </li>');
+                        echo('<li><a href="http://gamecharts.local/'.$store->Store.'"><img src="'.$store->Splash. '" alt="'.$store->Store.' logo"/></a> </li>');
                   }
                }
                ?>
          </span>
       <div class="route-top">
-         <a href="https://gamecharts.org">GameCharts</a>&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i>&nbsp;&nbsp;
-         <a href="https://gamecharts.org/<?php echo $source?>"><?php echo $source?></a>&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i>&nbsp;&nbsp;<a href="#"><?php echo($gameinfo_aux[0]->Name); ?></a>
+         <a href="http://gamecharts.local">GameCharts</a>&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i>&nbsp;&nbsp;
+         <a href="http://gamecharts.local/<?php echo $source?>"><?php echo $source?></a>&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i>&nbsp;&nbsp;<a href="#"><?php echo($gameinfo_aux[0]->Name); ?></a>
       </div>
    </div>
 
@@ -662,19 +662,19 @@
 
    <?php include('footer.php'); ?>
 
-   <script src="https://gamecharts.org/assets/js/jquery.min.js"></script>
+   <script src="http://gamecharts.local/assets/js/jquery.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-   <script src="https://gamecharts.org/assets/js/bootstrap.bundle.min.js"></script>
-   <script src="https://gamecharts.org/assets/js/waves.min.js"></script>
-   <script src="https://gamecharts.org/assets/js/jquery.slimscroll.min.js"></script>
-   <script src="https://gamecharts.org/assets/plugins/moment/moment.js"></script>
-   <script src="https://gamecharts.org/assets/plugins/apexcharts/apexcharts.min.js"></script>
-   <script src="https://gamecharts.org/assets/pages/jquery.apexcharts.init.js"></script>
-   <script src="https://gamecharts.org/assets/plugins/sparklines-chart/jquery.sparkline.min.js"></script>
-   <script src="https://gamecharts.org/assets/pages/jquery.charts-sparkline.js"></script>
-   <script src="https://gamecharts.org/assets/js/checkCookie.js"></script>
-   <script src="https://gamecharts.org/assets/js/app.js"></script>
-   <script src="https://gamecharts.org/assets/js/searchbox.js"></script>
+   <script src="http://gamecharts.local/assets/js/bootstrap.bundle.min.js"></script>
+   <script src="http://gamecharts.local/assets/js/waves.min.js"></script>
+   <script src="http://gamecharts.local/assets/js/jquery.slimscroll.min.js"></script>
+   <script src="http://gamecharts.local/assets/plugins/moment/moment.js"></script>
+   <script src="http://gamecharts.local/assets/plugins/apexcharts/apexcharts.min.js"></script>
+   <script src="http://gamecharts.local/assets/pages/jquery.apexcharts.init.js"></script>
+   <script src="http://gamecharts.local/assets/plugins/sparklines-chart/jquery.sparkline.min.js"></script>
+   <script src="http://gamecharts.local/assets/pages/jquery.charts-sparkline.js"></script>
+   <script src="http://gamecharts.local/assets/js/checkCookie.js"></script>
+   <script src="http://gamecharts.local/assets/js/app.js"></script>
+   <script src="http://gamecharts.local/assets/js/searchbox.js"></script>
 </body>
 
 <script>

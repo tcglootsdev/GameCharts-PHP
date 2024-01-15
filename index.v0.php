@@ -94,9 +94,9 @@ $stores = $aux;
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
     <!-- App css -->
-    <link href="https://gamecharts.org/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://gamecharts.org/assets/css/icons.css" rel="stylesheet" type="text/css" />
-    <link href="https://gamecharts.org/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="http://gamecharts.local/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://gamecharts.local/assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="http://gamecharts.local/assets/css/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
     <script data-ad-client="ca-pub-9457982685178503" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -112,7 +112,7 @@ $stores = $aux;
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-gradient-green fixed-top">
-    <a href="https://gamecharts.org"><img src="https://gamecharts.org/assets/images/logo-1.png" class="logoGameCharts" alt="Game Charts logo"></a>
+    <a href="http://gamecharts.local"><img src="http://gamecharts.local/assets/images/logo-1.png" class="logoGameCharts" alt="Game Charts logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -141,7 +141,7 @@ $stores = $aux;
     <span class="game-platforms-menu">
                   <?php
                   foreach($stores as $store) {
-                      echo('<li><a href="https://gamecharts.org/'.$store->Store.'"><img src="'.$store->Splash.'" alt="'.$store->Store.'"/></a> </li>');
+                      echo('<li><a href="http://gamecharts.local/'.$store->Store.'"><img src="'.$store->Splash.'" alt="'.$store->Store.'"/></a> </li>');
                   }
                   ?>
           </span>
@@ -402,7 +402,7 @@ $stores = $aux;
                         <div class="col-12">
                             <div id="trending_game_slider" class="trending_game_slider">
                                 <?php foreach($trending as $data):?>
-                                    <?php $i_game = json_decode(file_get_contents('https://gamecharts.org/data/' . $data['store'] . '/games_seo/' . $data['app_id'] . '/gameinfo.json'));?>
+                                    <?php $i_game = json_decode(file_get_contents('http://gamecharts.local/data/' . $data['store'] . '/games_seo/' . $data['app_id'] . '/gameinfo.json'));?>
 
                                     <div class="row ml-4 mr-4">
                                         <div style="display: inline-block;padding: 0" class="col-sm-12 col-md-5">
@@ -426,7 +426,7 @@ $stores = $aux;
                         <div class="col-12">
                             <div id="top_game_slider" class="top_game_slider">
                                 <?php foreach($topdata as $data):?>
-                                    <?php $i_game = json_decode(file_get_contents('https://gamecharts.org/data/' . $data->Store . '/games_seo/' . $data->NameSEO . '/gameinfo.json'));?>
+                                    <?php $i_game = json_decode(file_get_contents('http://gamecharts.local/data/' . $data->Store . '/games_seo/' . $data->NameSEO . '/gameinfo.json'));?>
 
                                     <div class="row ml-4 mr-4">
                                         <div style="display: inline-block;padding: 0" class="col-sm-12 col-md-5">
@@ -698,7 +698,7 @@ $stores = $aux;
                       <h2 class="ml-4">Trending Games</h2>
                         <div id="trending_game_slider_mobile" class="trending_game_slider_mobile">
                             <?php foreach($trending as $data):?>
-                                <?php $i_game = json_decode(file_get_contents('https://gamecharts.org/data/' . $data['store'] . '/games_seo/' . $data['app_id'] . '/gameinfo.json'));?>
+                                <?php $i_game = json_decode(file_get_contents('http://gamecharts.local/data/' . $data['store'] . '/games_seo/' . $data['app_id'] . '/gameinfo.json'));?>
 
                                 <div class="row ml-4 mr-2">
                                     <div style="display: block; width: 100%" >
@@ -722,7 +722,7 @@ $stores = $aux;
                       <h2 class="ml-4">Top Games</h2>
                         <div id="top_game_slider_mobile" class="top_game_slider_mobile">
                             <?php foreach($topdata as $data):?>
-                                <?php $i_game = json_decode(file_get_contents('https://gamecharts.org/data/' . $data->Store . '/games_seo/' . $data->NameSEO . '/gameinfo.json'));?>
+                                <?php $i_game = json_decode(file_get_contents('http://gamecharts.local/data/' . $data->Store . '/games_seo/' . $data->NameSEO . '/gameinfo.json'));?>
 
                                 <div class="row ml-4 mr-2">
                                     <div style="display: block; width: 100%" >
@@ -754,13 +754,13 @@ $stores = $aux;
                 <li style="list-style-type: none;">&copy; 2019-<?php echo(date('Y')); ?> Game Charts
                     <ul>
                         <li style="list-style-type: none; padding-top: 5px;">
-                            <a href="https://gamecharts.org/about">About</a>
+                            <a href="http://gamecharts.local/about">About</a>
                         </li>
                         <li style="list-style-type: none; padding-top: 5px;">
-                            <a href="https://gamecharts.org/privacy">Privacy</a>
+                            <a href="http://gamecharts.local/privacy">Privacy</a>
                         </li>
                         <li style="list-style-type: none; padding-top: 5px;">
-                            <a href="https://gamecharts.org/cookies">Cookies Policy</a>
+                            <a href="http://gamecharts.local/cookies">Cookies Policy</a>
                         </li>
                     </ul>
                 </li>
@@ -769,7 +769,7 @@ $stores = $aux;
                 <li style="list-style-type: none;">Supported Platforms
                     <ul style="padding-top: 10px;">
                         <?php foreach($stores as $store):?>
-                        <li style="list-style-type: none; padding-top: 5px;"><a class="footer-items" href="https://gamecharts.org/<?php echo $store->Store?>"><?php echo $store->Store?></a>
+                        <li style="list-style-type: none; padding-top: 5px;"><a class="footer-items" href="http://gamecharts.local/<?php echo $store->Store?>"><?php echo $store->Store?></a>
                             <?php endforeach;?>
                     </ul>
                 </li>
@@ -778,10 +778,10 @@ $stores = $aux;
             <div class="col-md-6 col-xs-6 row">
                 <?php foreach($stores as $store):?>
                     <div class="footer-item col-md-6 col-xs-6">
-                        <li style="list-style-type: none;"><a href="https://gamecharts.org/<?php echo $store->Store?>/top">Top <?php echo $store->Store?> Games</a>
+                        <li style="list-style-type: none;"><a href="http://gamecharts.local/<?php echo $store->Store?>/top">Top <?php echo $store->Store?> Games</a>
                             <ul style="padding-top: 10px;">
                                 <?php $platform_top_games = get_top_games($store->Store); foreach ($platform_top_games as $platform_top_game):?>
-                                    <li style="list-style-type: none; padding-top: 5px;"><a class="footer-items" href="https://gamecharts.org/<?php echo $store->Store?>/<?php echo $platform_top_game->NameSEO?>"><?php echo $platform_top_game->Name?></a></li>
+                                    <li style="list-style-type: none; padding-top: 5px;"><a class="footer-items" href="http://gamecharts.local/<?php echo $store->Store?>/<?php echo $platform_top_game->NameSEO?>"><?php echo $platform_top_game->Name?></a></li>
                                 <?php endforeach;?>
                             </ul>
                         </li>

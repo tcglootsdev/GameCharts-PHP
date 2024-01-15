@@ -93,13 +93,13 @@
       <!-- App favicon -->
       <link rel="shortcut icon" href="assets/images/favicon.ico">
       <!-- App css -->
-      <link href="https://gamecharts.org/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-      <link href="https://gamecharts.org/assets/css/icons.css" rel="stylesheet" type="text/css" />
-      <link href="https://gamecharts.org/assets/css/style.css" rel="stylesheet" type="text/css" />
+      <link href="http://gamecharts.local/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+      <link href="http://gamecharts.local/assets/css/icons.css" rel="stylesheet" type="text/css" />
+      <link href="http://gamecharts.local/assets/css/style.css" rel="stylesheet" type="text/css" />
    </head>
    <body>
       <nav class="navbar navbar-expand-lg navbar-light bg-gradient-green fixed-top">
-          <a href="https://gamecharts.org"><img src="https://gamecharts.org/assets/images/logo-1.png" class="logoGameCharts" alt="Game Charts logo"></a>
+          <a href="http://gamecharts.local"><img src="http://gamecharts.local/assets/images/logo-1.png" class="logoGameCharts" alt="Game Charts logo"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
@@ -128,7 +128,7 @@
           <span class="game-platforms-menu">
                   <?php
                   foreach($stores as $store) {
-                      echo('<li><a href="https://gamecharts.org/'.$store->Store.'"><img src="'.$store->Splash.'"/></a> </li>');
+                      echo('<li><a href="http://gamecharts.local/'.$store->Store.'"><img src="'.$store->Splash.'"/></a> </li>');
                   }
                   ?>
           </span>
@@ -410,7 +410,7 @@
                       <li style="list-style-type: none;">Supported Platforms
                           <ul style="padding-top: 10px;">
                               <?php foreach($stores as $store):?>
-                                  <li style="list-style-type: none; padding-top: 5px;"><a class="footer-items" href="https://gamecharts.org/<?php echo $store->Store?>"><?php echo $store->Store?></a>
+                                  <li style="list-style-type: none; padding-top: 5px;"><a class="footer-items" href="http://gamecharts.local/<?php echo $store->Store?>"><?php echo $store->Store?></a>
                               <?php endforeach;?>
                           </ul>
                       </li>
@@ -419,10 +419,10 @@
                   <div class="col-md-6 col-xs-6 row">
                       <?php foreach($stores as $store):?>
                           <div class="footer-item col-md-6 col-xs-6">
-                              <li style="list-style-type: none;"><a href="https://gamecharts.org/<?php echo $store->Store?>/top">Top <?php echo $store->Store?> Games</a>
+                              <li style="list-style-type: none;"><a href="http://gamecharts.local/<?php echo $store->Store?>/top">Top <?php echo $store->Store?> Games</a>
                                   <ul style="padding-top: 10px;">
                                       <?php $platform_top_games = get_top_games($store->Store); foreach ($platform_top_games as $platform_top_game):?>
-                                          <li style="list-style-type: none; padding-top: 5px;"><a class="footer-items" href="https://gamecharts.org/<?php echo $store->Store?>/<?php echo $platform_top_game->AppID?>"><?php echo $platform_top_game->Name?></a></li>
+                                          <li style="list-style-type: none; padding-top: 5px;"><a class="footer-items" href="http://gamecharts.local/<?php echo $store->Store?>/<?php echo $platform_top_game->AppID?>"><?php echo $platform_top_game->Name?></a></li>
                                       <?php endforeach;?>
                                   </ul>
                               </li>

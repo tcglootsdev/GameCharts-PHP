@@ -45,12 +45,12 @@
         <meta content="Mannatthemes" name="author" />
 
         <!-- App favicon -->
-        <link rel="shortcut icon" href="https://gamecharts.org/assets/images/favicon.ico">
+        <link rel="shortcut icon" href="http://gamecharts.local/assets/images/favicon.ico">
 
         <!-- App css -->
-        <link href="https://gamecharts.org/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="https://gamecharts.org/assets/css/icons.css" rel="stylesheet" type="text/css" />
-        <link href="https://gamecharts.org/assets/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="http://gamecharts.local/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="http://gamecharts.local/assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="http://gamecharts.local/assets/css/style.css" rel="stylesheet" type="text/css" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43282477-5"></script>
 <script>
@@ -125,22 +125,22 @@
         <!-- end page-wrapper -->
 
         <!-- jQuery  -->
-        <script src="https://gamecharts.org/assets/js/jquery.min.js"></script>
-        <script src="https://gamecharts.org/assets/js/bootstrap.bundle.min.js"></script>
-        <script src="https://gamecharts.org/assets/js/waves.min.js"></script>
-        <script src="https://gamecharts.org/assets/js/jquery.slimscroll.min.js"></script>
+        <script src="http://gamecharts.local/assets/js/jquery.min.js"></script>
+        <script src="http://gamecharts.local/assets/js/bootstrap.bundle.min.js"></script>
+        <script src="http://gamecharts.local/assets/js/waves.min.js"></script>
+        <script src="http://gamecharts.local/assets/js/jquery.slimscroll.min.js"></script>
 
-        <script src="https://gamecharts.org/assets/plugins/moment/moment.js"></script>
+        <script src="http://gamecharts.local/assets/plugins/moment/moment.js"></script>
 
-        <script src="https://gamecharts.org/assets/plugins/apexcharts/apexcharts.min.js"></script>
-        <script src="https://gamecharts.org/assets/pages/jquery.apexcharts.init.js"></script>
+        <script src="http://gamecharts.local/assets/plugins/apexcharts/apexcharts.min.js"></script>
+        <script src="http://gamecharts.local/assets/pages/jquery.apexcharts.init.js"></script>
 
-        <script src="https://gamecharts.org/assets/plugins/sparklines-chart/jquery.sparkline.min.js"></script>
-        <script src="https://gamecharts.org/assets/pages/jquery.charts-sparkline.js"></script>
+        <script src="http://gamecharts.local/assets/plugins/sparklines-chart/jquery.sparkline.min.js"></script>
+        <script src="http://gamecharts.local/assets/pages/jquery.charts-sparkline.js"></script>
 
 
         <!-- App js -->
-        <script src="https://gamecharts.org/assets/js/app.js"></script>
+        <script src="http://gamecharts.local/assets/js/app.js"></script>
 
     </body>
 </html>

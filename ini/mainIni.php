@@ -110,13 +110,13 @@
          <?php
          foreach($stores as $store) {
              if ($store->Store == $source){
-                 echo('<li><a href="https://gamecharts.org/'.$store->Store.'"><img src="'.$store->Splash.'" alt="' . $store->Store . '"/></a></li>');
+                 echo('<li><a href="http://gamecharts.local/'.$store->Store.'"><img src="'.$store->Splash.'" alt="' . $store->Store . '"/></a></li>');
              }
          }
          ?>
     </span>
     <div class="route">
-        <a href="https://gamecharts.org">Home</a>&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i>&nbsp;&nbsp;<a href="#"><?php echo $source?></a>
+        <a href="http://gamecharts.local">Home</a>&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i>&nbsp;&nbsp;<a href="#"><?php echo $source?></a>
     </div>
 </div>
 
@@ -201,7 +201,7 @@
                             <div class="col-12">
                                 <div id="trending_game_slider" class="trending_game_slider">
                                     <?php foreach($trending as $data):?>
-                                        <?php $i_game = json_decode(file_get_contents('https://gamecharts.org/data/' . $source . '/games_seo/' . $data['app_id'] . '/gameinfo.json'));?>
+                                        <?php $i_game = json_decode(file_get_contents('http://gamecharts.local/data/' . $source . '/games_seo/' . $data['app_id'] . '/gameinfo.json'));?>
 
                                         <div class="row ml-1 mr-1">
                                             <div style="display: inline-block;padding: 0" class="col-12 col-md-5">
@@ -276,7 +276,7 @@
                                                 </tbody>
                                             </table>
                                         </div>
-                                        <div class="d-flex justify-content-end border-top py-1 px-3"><a class="btn btn-primary btn-round waves-effect waves-light" href="https://gamecharts.org/<?php echo($source); ?>/top"> More </a></div>
+                                        <div class="d-flex justify-content-end border-top py-1 px-3"><a class="btn btn-primary btn-round waves-effect waves-light" href="http://gamecharts.local/<?php echo($source); ?>/top"> More </a></div>
                                     </div><!--end card-body-->
                                 </div><!--end card-->
                             </div><!--end col-->
@@ -287,7 +287,7 @@
                             <div class="col-12">
                                 <div id="top_game_slider" class="top_game_slider">
                                     <?php foreach($topdata as $data):?>
-                                        <?php $i_game = json_decode(file_get_contents('https://gamecharts.org/data/' . $source . '/games_seo/' . $data->NameSEO . '/gameinfo.json'));?>
+                                        <?php $i_game = json_decode(file_get_contents('http://gamecharts.local/data/' . $source . '/games_seo/' . $data->NameSEO . '/gameinfo.json'));?>
 
                                         <div class="row ml-1 mr-1">
                                             <div style="display: inline-block;padding: 0" class="col-12 col-md-5">
@@ -370,7 +370,7 @@
                             <div class="col-12">
                                 <div id="trending_game_average_slider" class="trending_game_slider">
                                     <?php foreach($trending_average as $data):?>
-                                        <?php $i_game = json_decode(file_get_contents('https://gamecharts.org/data/' . $source . '/games_seo/' . $data['app_id'] . '/gameinfo.json'));?>
+                                        <?php $i_game = json_decode(file_get_contents('http://gamecharts.local/data/' . $source . '/games_seo/' . $data['app_id'] . '/gameinfo.json'));?>
 
                                         <div class="row ml-1 mr-1">
                                             <div style="display: inline-block;padding: 0" class="col-12 col-md-5">
@@ -447,7 +447,7 @@
                                                 </tbody>
                                             </table>
                                         </div>
-                                        <div class="d-flex justify-content-end border-top py-1 px-3"><a class="btn btn-primary btn-round waves-effect waves-light" href="https://gamecharts.org/<?php echo($source); ?>/average"> More </a></div>
+                                        <div class="d-flex justify-content-end border-top py-1 px-3"><a class="btn btn-primary btn-round waves-effect waves-light" href="http://gamecharts.local/<?php echo($source); ?>/average"> More </a></div>
                                     </div><!--end card-body-->
                                 </div><!--end card-->
                             </div><!--end col-->
@@ -459,7 +459,7 @@
                             <div id="top_game_average_slider" class="top_game_slider">
                                 <?php foreach($topdata_average as $data):?>
                                 	
-                                    <?php $i_game = json_decode(file_get_contents('https://gamecharts.org/data/' . $source . '/games_seo/' . $data->NameSEO . '/gameinfo.json'));?>
+                                    <?php $i_game = json_decode(file_get_contents('http://gamecharts.local/data/' . $source . '/games_seo/' . $data->NameSEO . '/gameinfo.json'));?>
     
     								<div class="row ml-1 mr-1">
                                         <div style="display: inline-block;padding: 0" class="col-12 col-md-5">
@@ -601,7 +601,7 @@
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="d-flex justify-content-end border-top py-1 px-3"><a class="btn btn-primary btn-round waves-effect waves-light" href="https://gamecharts.org/<?php echo($source); ?>/top"> More </a></div>
+                                <div class="d-flex justify-content-end border-top py-1 px-3"><a class="btn btn-primary btn-round waves-effect waves-light" href="http://gamecharts.local/<?php echo($source); ?>/top"> More </a></div>
                             </div><!--end card-body-->
                         </div><!--end card-->
                     </div>
@@ -717,7 +717,7 @@
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="d-flex justify-content-end border-top py-1 px-3"><a class="btn btn-primary btn-round waves-effect waves-light" href="https://gamecharts.org/<?php echo($source); ?>/average"> More </a></div>
+                                <div class="d-flex justify-content-end border-top py-1 px-3"><a class="btn btn-primary btn-round waves-effect waves-light" href="http://gamecharts.local/<?php echo($source); ?>/average"> More </a></div>
                             </div><!--end card-body-->
                         </div><!--end card-->
                     </div>
@@ -726,7 +726,7 @@
                             <div class="col-12">
                                 <div id="trending_game_slider_mobile" class="trending_game_slider_mobile">
                                     <?php foreach($trending as $data):?>
-                                        <?php $i_game = json_decode(file_get_contents('https://gamecharts.org/data/' . $source . '/games_seo/' . $data['app_id'] . '/gameinfo.json'));?>
+                                        <?php $i_game = json_decode(file_get_contents('http://gamecharts.local/data/' . $source . '/games_seo/' . $data['app_id'] . '/gameinfo.json'));?>
 
                                         <div class="row ml-4 mr-2">
                                             <div style="display: block; width: 100%" >
@@ -750,7 +750,7 @@
                             <div class="col-12">
                                 <div id="top_game_slider_mobile" class="top_game_slider_mobile">
                                     <?php foreach($topdata as $data):?>
-                                        <?php $i_game = json_decode(file_get_contents('https://gamecharts.org/data/' . $source . '/games_seo/' . $data->NameSEO . '/gameinfo.json'));?>
+                                        <?php $i_game = json_decode(file_get_contents('http://gamecharts.local/data/' . $source . '/games_seo/' . $data->NameSEO . '/gameinfo.json'));?>
 
                                         <div class="row ml-4 mr-2">
                                             <div style="display: block; width: 100%" >
@@ -784,24 +784,24 @@
 
 
         <!-- jQuery  -->
-    <script src="https://gamecharts.org/assets/js/jquery.min.js"></script>
+    <script src="http://gamecharts.local/assets/js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-    <script src="https://gamecharts.org/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://gamecharts.org/assets/js/waves.min.js"></script>
-    <script src="https://gamecharts.org/assets/js/jquery.slimscroll.min.js"></script>
+    <script src="http://gamecharts.local/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="http://gamecharts.local/assets/js/waves.min.js"></script>
+    <script src="http://gamecharts.local/assets/js/jquery.slimscroll.min.js"></script>
 
-    <script src="https://gamecharts.org/assets/plugins/moment/moment.js"></script>
+    <script src="http://gamecharts.local/assets/plugins/moment/moment.js"></script>
 
-    <script src="https://gamecharts.org/assets/plugins/apexcharts/apexcharts.min.js"></script>
-    <script src="https://gamecharts.org/assets/pages/jquery.apexcharts.init.js"></script>
+    <script src="http://gamecharts.local/assets/plugins/apexcharts/apexcharts.min.js"></script>
+    <script src="http://gamecharts.local/assets/pages/jquery.apexcharts.init.js"></script>
 
-    <script src="https://gamecharts.org/assets/plugins/sparklines-chart/jquery.sparkline.min.js"></script>
-    <script src="https://gamecharts.org/assets/pages/jquery.charts-sparkline.js"></script>
+    <script src="http://gamecharts.local/assets/plugins/sparklines-chart/jquery.sparkline.min.js"></script>
+    <script src="http://gamecharts.local/assets/pages/jquery.charts-sparkline.js"></script>
 
     <!-- App js -->
-    <script src="https://gamecharts.org/assets/js/app.js"></script>
-    <script src="https://gamecharts.org/assets/js/searchbox.js"></script>
-    <script src="https://gamecharts.org/assets/js/checkCookie.js"></script>
+    <script src="http://gamecharts.local/assets/js/app.js"></script>
+    <script src="http://gamecharts.local/assets/js/searchbox.js"></script>
+    <script src="http://gamecharts.local/assets/js/checkCookie.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     </body>
 </html>

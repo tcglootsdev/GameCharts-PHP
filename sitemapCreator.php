@@ -123,7 +123,7 @@ if ($sitemapFile === FALSE){
 addToFile ($sitemapFile,"<?xml version=\"1.0\" encoding=\"utf-8\"?>");
 addToFile ($sitemapFile,"<urlset>");
 $sitesArray = array();
-$siteBase = "https://gamecharts.org";
+$siteBase = "http://gamecharts.local";
 addSiteToSitemap ($sitemapFile,$sitesArray,$siteBase,"./index.php","1.0","","hourly");
 addSiteToSitemap ($sitemapFile,$sitesArray,$siteBase."/privacy","./privacy.php","0.5","","monthly");
 addSiteToSitemap ($sitemapFile,$sitesArray,$siteBase."/about","./about.php","0.5","","monthly");

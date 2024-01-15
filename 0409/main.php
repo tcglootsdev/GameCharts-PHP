@@ -99,12 +99,12 @@
         <meta content="Jose Maria Lopez-Terradas" name="author" />
 
         <!-- App favicon -->
-        <link rel="shortcut icon" href="https://gamecharts.org/assets/images/favicon.ico">
+        <link rel="shortcut icon" href="http://gamecharts.local/assets/images/favicon.ico">
 
         <!-- App css -->
-        <link href="https://gamecharts.org/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="https://gamecharts.org/assets/css/icons.css" rel="stylesheet" type="text/css" />
-        <link href="https://gamecharts.org/assets/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="http://gamecharts.local/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="http://gamecharts.local/assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="http://gamecharts.local/assets/css/style.css" rel="stylesheet" type="text/css" />
     </head>
     
     <style>
@@ -116,7 +116,7 @@
     <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-gradient-green fixed-top">
-        <a href="https://gamecharts.org"><img src="https://gamecharts.org/assets/images/logo-1.png" class="logoGameCharts" alt="Game Charts logo"></a>
+        <a href="http://gamecharts.local"><img src="http://gamecharts.local/assets/images/logo-1.png" class="logoGameCharts" alt="Game Charts logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -146,13 +146,13 @@
              <?php
              foreach($stores as $store) {
                  if ($store->Store == $source){
-                     echo('<li><a href="https://gamecharts.org/'.$store->Store.'"><img src="'.$store->Splash.'"/></a> </li>');
+                     echo('<li><a href="http://gamecharts.local/'.$store->Store.'"><img src="'.$store->Splash.'"/></a> </li>');
                  }
              }
              ?>
         </span>
         <div class="route">
-            <a href="https://gamecharts.org">Home</a>&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i>&nbsp;&nbsp;<a href="#"><?php echo $source?></a>
+            <a href="http://gamecharts.local">Home</a>&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i>&nbsp;&nbsp;<a href="#"><?php echo $source?></a>
         </div>
     </div>
 
@@ -278,7 +278,7 @@
                                                 </tbody>
                                             </table>
                                         </div>
-                                        <div class="d-flex justify-content-end border-top py-1 px-3"><a class="btn btn-primary btn-round waves-effect waves-light" href="https://gamecharts.org/<?php echo($source); ?>/top"> More </a></div>
+                                        <div class="d-flex justify-content-end border-top py-1 px-3"><a class="btn btn-primary btn-round waves-effect waves-light" href="http://gamecharts.local/<?php echo($source); ?>/top"> More </a></div>
                                     </div><!--end card-body-->
                                 </div><!--end card-->
                             </div><!--end col-->
@@ -395,7 +395,7 @@
                                                 </tbody>
                                             </table>
                                         </div>
-                                        <div class="d-flex justify-content-end border-top py-1 px-3"><a class="btn btn-primary btn-round waves-effect waves-light" href="https://gamecharts.org/<?php echo($source); ?>/average"> More </a></div>
+                                        <div class="d-flex justify-content-end border-top py-1 px-3"><a class="btn btn-primary btn-round waves-effect waves-light" href="http://gamecharts.local/<?php echo($source); ?>/average"> More </a></div>
                                     </div><!--end card-body-->
                                 </div><!--end card-->
                             </div><!--end col-->
@@ -426,7 +426,7 @@
                     <li style="list-style-type: none;">Supported Platforms
                         <ul style="padding-top: 10px;">
                             <?php foreach($stores as $store):?>
-                            <li style="list-style-type: none; padding-top: 5px;"><a class="footer-items" href="https://gamecharts.org/<?php echo $store->Store?>"><?php echo $store->Store?></a>
+                            <li style="list-style-type: none; padding-top: 5px;"><a class="footer-items" href="http://gamecharts.local/<?php echo $store->Store?>"><?php echo $store->Store?></a>
                                 <?php endforeach;?>
                         </ul>
                     </li>
@@ -434,10 +434,10 @@
                 <div class="col-md-6 col-xs-6 row">
                     <?php foreach($stores as $store):?>
                         <div class="footer-item col-md-6 col-xs-6">
-                            <li style="list-style-type: none;"><a href="https://gamecharts.org/<?php echo $store->Store?>/top">Top <?php echo $store->Store?> Games</a>
+                            <li style="list-style-type: none;"><a href="http://gamecharts.local/<?php echo $store->Store?>/top">Top <?php echo $store->Store?> Games</a>
                                 <ul style="padding-top: 10px;">
                                     <?php $platform_top_games = get_top_games($store->Store); foreach ($platform_top_games as $platform_top_game):?>
-                                        <li style="list-style-type: none; padding-top: 5px;"><a class="footer-items" href="https://gamecharts.org/<?php echo $store->Store?>/<?php echo $platform_top_game->AppID?>"><?php echo $platform_top_game->Name?></a></li>
+                                        <li style="list-style-type: none; padding-top: 5px;"><a class="footer-items" href="http://gamecharts.local/<?php echo $store->Store?>/<?php echo $platform_top_game->AppID?>"><?php echo $platform_top_game->Name?></a></li>
                                     <?php endforeach;?>
                                 </ul>
                             </li>
@@ -489,7 +489,7 @@
 // 		if (value.length >= 3) {
 //
 // 			var searchString = value.substring(0,3).toLowerCase();
-// 			var gameList = $.getJSON( "https://gamecharts.org/data/search/" + searchString + ".json", function( data ) {
+// 			var gameList = $.getJSON( "http://gamecharts.local/data/search/" + searchString + ".json", function( data ) {
 //
 // 				$('#searched_game').show();
 // 				$('#searched_game').html('');

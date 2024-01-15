@@ -15,10 +15,10 @@
    <meta name = "twitter:site" content="@gamecharts">
    <meta name = "twitter:creator" content="@gamecharts">
    <meta name = "twitter:description" content="<?php echo $description;?>"/>
-   <meta name = "twitter:image" content="https://gamecharts.org/assets/images/logo-1.png"/>
+   <meta name = "twitter:image" content="http://gamecharts.local/assets/images/logo-1.png"/>
    <meta property = "og:type" content="website" />
-   <meta property = "og:url" content="https://gamecharts.org"/>
-   <meta property = "og:image" content="https://gamecharts.org/assets/images/logo-1.png"/>
+   <meta property = "og:url" content="http://gamecharts.local"/>
+   <meta property = "og:image" content="http://gamecharts.local/assets/images/logo-1.png"/>
    <meta property = "og:site_name" content="Gamecharts"/>
    <meta property = "og:title" content="Game Charts - <?php echo $title;?>" />
    <meta property = "og:description" content="<?php echo $description;?>"/>
@@ -34,28 +34,28 @@
    <!-- App favicon -->
    <link rel="shortcut icon" href="assets/images/favicon.ico">
    <!-- App css -->
-   <link href="https://gamecharts.org/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-   <link href="https://gamecharts.org/assets/css/icons.css" rel="stylesheet" type="text/css" />
-   <link href="https://gamecharts.org/assets/css/styleNew.css" rel="stylesheet" type="text/css" />
+   <link href="http://gamecharts.local/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+   <link href="http://gamecharts.local/assets/css/icons.css" rel="stylesheet" type="text/css" />
+   <link href="http://gamecharts.local/assets/css/styleNew.css" rel="stylesheet" type="text/css" />
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
    <script src="https://kit.fontawesome.com/6a7583b380.js" crossorigin="anonymous"></script>
    <!-- jQuery  -->
-   <script src="https://gamecharts.org/assets/js/jquery.min.js"></script>
+   <script src="http://gamecharts.local/assets/js/jquery.min.js"></script>
    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-   <script src="https://gamecharts.org/assets/js/bootstrap.bundle.min.js"></script>
-   <script defer src="https://gamecharts.org/assets/js/waves.min.js"></script>
-   <script defer src="https://gamecharts.org/assets/js/jquery.slimscroll.min.js"></script>
-   <script defer src="https://gamecharts.org/assets/plugins/moment/moment.js"></script>
-   <script defer src="https://gamecharts.org/assets/plugins/apexcharts/apexcharts.min.js"></script>
-   <script defer src="https://gamecharts.org/assets/pages/jquery.apexcharts.init.js"></script>
-   <script defer src="https://gamecharts.org/assets/plugins/sparklines-chart/jquery.sparkline.min.js"></script>
-   <script defer src="https://gamecharts.org/assets/pages/jquery.charts-sparkline.js"></script>
+   <script src="http://gamecharts.local/assets/js/bootstrap.bundle.min.js"></script>
+   <script defer src="http://gamecharts.local/assets/js/waves.min.js"></script>
+   <script defer src="http://gamecharts.local/assets/js/jquery.slimscroll.min.js"></script>
+   <script defer src="http://gamecharts.local/assets/plugins/moment/moment.js"></script>
+   <script defer src="http://gamecharts.local/assets/plugins/apexcharts/apexcharts.min.js"></script>
+   <script defer src="http://gamecharts.local/assets/pages/jquery.apexcharts.init.js"></script>
+   <script defer src="http://gamecharts.local/assets/plugins/sparklines-chart/jquery.sparkline.min.js"></script>
+   <script defer src="http://gamecharts.local/assets/pages/jquery.charts-sparkline.js"></script>
    <!-- App js -->
-   <script defer src="https://gamecharts.org/assets/js/checkCookie.js"></script>
-   <script defer src="https://gamecharts.org/assets/js/app.js"></script>
-   <script defer src="https://gamecharts.org/assets/js/searchbox.js"></script>
+   <script defer src="http://gamecharts.local/assets/js/checkCookie.js"></script>
+   <script defer src="http://gamecharts.local/assets/js/app.js"></script>
+   <script defer src="http://gamecharts.local/assets/js/searchbox.js"></script>
    <script defer src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-   <script src="https://gamecharts.org/js/lazysizes.min.js" async=""></script>
+   <script src="http://gamecharts.local/js/lazysizes.min.js" async=""></script>
 
 
    <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -67,5 +67,5 @@
 
       gtag('config', 'UA-43282477-5');
   </script>
-  <script data-ad-client="ca-pub-2433076550762661" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!--  <script data-ad-client="ca-pub-2433076550762661" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
 </head>

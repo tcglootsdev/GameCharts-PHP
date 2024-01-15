@@ -2,7 +2,7 @@
 
     ini_set('display_errors',false);
     date_default_timezone_set("Europe/Madrid");
-    $stores = json_decode(file_get_contents('https://gamecharts.org/data/store.json'));
+    $stores = json_decode(file_get_contents('http://gamecharts.local/data/store.json'));
     function get_top_games($platform_name){
         $top_games = json_decode(file_get_contents('./data/' . $platform_name . '/top/topccu.json'));
         return array_slice($top_games, 0, 5, true);
@@ -15,11 +15,11 @@
     <title>Game Charts Privacy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!-- App favicon -->
-        <link rel="shortcut icon" href="https://gamecharts.org/assets/images/favicon.ico">
+        <link rel="shortcut icon" href="http://gamecharts.local/assets/images/favicon.ico">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link href="https://gamecharts.org/assets/css/icons.css" rel="stylesheet" type="text/css" />
-        <link href="https://gamecharts.org/assets/css/style.css" rel="stylesheet" type="text/css" />
-        <link href="https://gamecharts.org/assets/css/custom-highcharts.css" rel="stylesheet" type="text/css" />
+        <link href="http://gamecharts.local/assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="http://gamecharts.local/assets/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="http://gamecharts.local/assets/css/custom-highcharts.css" rel="stylesheet" type="text/css" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43282477-5"></script>
 <script>
@@ -55,13 +55,13 @@
             <div class="content">
 <h1>Privacy Policy of GameCharts</h1>
 
-<p>GameCharts operates the https://gamecharts.org website, which provides the SERVICE.</p>
+<p>GameCharts operates the http://gamecharts.local website, which provides the SERVICE.</p>
 
 <p>This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service, the GameCharts website.</p>
 
 <p>If you choose to use our Service, then you agree to the collection and use of information in relation with this policy. The Personal Information that we collect are used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.</p>
 
-<p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at https://gamecharts.org, unless otherwise defined in this Privacy Policy. Our Privacy Policy was created with the help of the <a href="https://www.privacypolicytemplate.net">Privacy Policy Template</a> and the <a href="https://www.disclaimergenerator.org/">Disclaimer Generator</a>.</p>
+<p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at http://gamecharts.local, unless otherwise defined in this Privacy Policy. Our Privacy Policy was created with the help of the <a href="https://www.privacypolicytemplate.net">Privacy Policy Template</a> and the <a href="https://www.disclaimergenerator.org/">Disclaimer Generator</a>.</p>
 
 <h2>Information Collection and Use</h2>
 
@@ -119,18 +119,18 @@
 
 <?php include('footer.php'); ?>
 
-<script src="https://gamecharts.org/assets/js/jquery.min.js"></script>
+<script src="http://gamecharts.local/assets/js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-<script src="https://gamecharts.org/assets/js/bootstrap.bundle.min.js"></script>
-<script src="https://gamecharts.org/assets/js/waves.min.js"></script>
-<script src="https://gamecharts.org/assets/js/jquery.slimscroll.min.js"></script>
-<script src="https://gamecharts.org/assets/plugins/moment/moment.js"></script>
-<script src="https://gamecharts.org/assets/plugins/apexcharts/apexcharts.min.js"></script>
-<script src="https://gamecharts.org/assets/pages/jquery.apexcharts.init.js"></script>
-<script src="https://gamecharts.org/assets/plugins/sparklines-chart/jquery.sparkline.min.js"></script>
-<script src="https://gamecharts.org/assets/pages/jquery.charts-sparkline.js"></script>
+<script src="http://gamecharts.local/assets/js/bootstrap.bundle.min.js"></script>
+<script src="http://gamecharts.local/assets/js/waves.min.js"></script>
+<script src="http://gamecharts.local/assets/js/jquery.slimscroll.min.js"></script>
+<script src="http://gamecharts.local/assets/plugins/moment/moment.js"></script>
+<script src="http://gamecharts.local/assets/plugins/apexcharts/apexcharts.min.js"></script>
+<script src="http://gamecharts.local/assets/pages/jquery.apexcharts.init.js"></script>
+<script src="http://gamecharts.local/assets/plugins/sparklines-chart/jquery.sparkline.min.js"></script>
+<script src="http://gamecharts.local/assets/pages/jquery.charts-sparkline.js"></script>
 <script src="assets/js/checkCookie.js"></script>
-<script src="https://gamecharts.org/assets/js/app.js"></script>
-<script src="https://gamecharts.org/assets/js/searchbox.js"></script>
+<script src="http://gamecharts.local/assets/js/app.js"></script>
+<script src="http://gamecharts.local/assets/js/searchbox.js"></script>
 </body>
 </html>

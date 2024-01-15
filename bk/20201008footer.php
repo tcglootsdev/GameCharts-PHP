@@ -9,13 +9,13 @@
         				<li style="list-style-type: none;">&copy; 2019-<?php echo(date('Y')); ?> Game Charts
                             <ul>
                                 <li style="list-style-type: none; padding-top: 5px;">
-                                    <a href="https://gamecharts.org/about">About</a>
+                                    <a href="http://gamecharts.local/about">About</a>
                                 </li>
                                 <li style="list-style-type: none; padding-top: 5px;">
-                                    <a href="https://gamecharts.org/privacy">Privacy</a>
+                                    <a href="http://gamecharts.local/privacy">Privacy</a>
                                 </li>
                                 <li style="list-style-type: none; padding-top: 5px;">
-                                    <a href="https://gamecharts.org/cookies">Cookies Policy</a>
+                                    <a href="http://gamecharts.local/cookies">Cookies Policy</a>
                                 </li>
                             </ul>
                         </li>
@@ -24,7 +24,7 @@
                         <li style="list-style-type: none;">Supported Platforms
                             <ul style="padding-top: 10px;">
                                 <?php foreach($stores as $store):?>
-                                <li style="list-style-type: none; padding-top: 5px;"><a class="footer-items" href="https://gamecharts.org/<?php echo $store->Store?>"><?php echo $store->Store?></a>
+                                <li style="list-style-type: none; padding-top: 5px;"><a class="footer-items" href="http://gamecharts.local/<?php echo $store->Store?>"><?php echo $store->Store?></a>
                                     <?php endforeach;?>
                             </ul>
                         </li>
@@ -55,10 +55,10 @@
             	<div class="row">
                     <?php foreach($stores as $store):?>
                         <div class="footer-item col-md-6 col-6">
-                            <li style="list-style-type: none;"><a href="https://gamecharts.org/<?php echo $store->Store?>/top">Top <?php echo $store->Store?> Games</a>
+                            <li style="list-style-type: none;"><a href="http://gamecharts.local/<?php echo $store->Store?>/top">Top <?php echo $store->Store?> Games</a>
                                 <ul style="padding-top: 10px;">
                                     <?php $platform_top_games = get_top_games($store->Store); foreach ($platform_top_games as $platform_top_game):?>
-                                        <li style="list-style-type: none; padding-top: 5px;"><a class="footer-items" href="https://gamecharts.org/<?php echo $store->Store?>/<?php echo $platform_top_game->NameSEO?>"><?php echo $platform_top_game->Name?></a></li>
+                                        <li style="list-style-type: none; padding-top: 5px;"><a class="footer-items" href="http://gamecharts.local/<?php echo $store->Store?>/<?php echo $platform_top_game->NameSEO?>"><?php echo $platform_top_game->Name?></a></li>
                                     <?php endforeach;?>
                                 </ul>
                             </li>
@@ -71,4 +71,4 @@
 </footer>
 
 <!-- SCHEMA.ORG -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"GAMECHARTS","url":"https://gamecharts.org/","address":"","sameAs":["https://www.facebook.com/Gamecharts-111747700514669/","https://www.youtube.com/channel/UCBXUnqxAMX8NUZvmN6VlROA/","https://twitter.com/Gamecharts1","https://www.instagram.com/gamechartsorg/"]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"GAMECHARTS","url":"http://gamecharts.local/","address":"","sameAs":["https://www.facebook.com/Gamecharts-111747700514669/","https://www.youtube.com/channel/UCBXUnqxAMX8NUZvmN6VlROA/","https://twitter.com/Gamecharts1","https://www.instagram.com/gamechartsorg/"]}</script>

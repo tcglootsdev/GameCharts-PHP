@@ -45,12 +45,12 @@ $trending_data = $trending_arr;
     <meta content="Mannatthemes" name="author" />
 
     <!-- App favicon -->
-    <link rel="shortcut icon" href="https://gamecharts.org/assets/images/favicon.ico">
+    <link rel="shortcut icon" href="http://gamecharts.local/assets/images/favicon.ico">
 
     <!-- App css -->
-    <link href="https://gamecharts.org/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://gamecharts.org/assets/css/icons.css" rel="stylesheet" type="text/css" />
-    <link href="https://gamecharts.org/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="http://gamecharts.local/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://gamecharts.local/assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="http://gamecharts.local/assets/css/style.css" rel="stylesheet" type="text/css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43282477-5"></script>
     <script>

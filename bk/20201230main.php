@@ -9,7 +9,7 @@
 
 	$title = "Game Charts - " . ucfirst ($source) . ": Top and Trending Games Statistics";
 	$description = "GameCharts. This page shows ". ucfirst ($source) . " Top Games and Trending of Games by current players or average players.";
-	$canonical = "https://gamecharts.org/$source";
+	$canonical = "http://gamecharts.local/$source";
 
 	$trending = array();
 	$trending_average = array();
@@ -121,13 +121,13 @@
          <?php
          foreach($stores as $store) {
              if ($store->Store == $source){
-                 echo('<li><a href="https://gamecharts.org/'.$store->Store.'"><img src="'.$store->Splash.'" alt="' . $store->Store . '"/></a></li>');
+                 echo('<li><a href="http://gamecharts.local/'.$store->Store.'"><img src="'.$store->Splash.'" alt="' . $store->Store . '"/></a></li>');
              }
          }
          ?>
     </span>
     <div class="route">
-        <a href="https://gamecharts.org">Home</a>&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i>&nbsp;&nbsp;<a href="#"><?php echo ucfirst($source)?></a>
+        <a href="http://gamecharts.local">Home</a>&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i>&nbsp;&nbsp;<a href="#"><?php echo ucfirst($source)?></a>
     </div>
 </div>
 
@@ -335,7 +335,7 @@
                         	                        </tbody>
                                 	            </table>
 	                                        </div>
-        	                                <div class="d-flex justify-content-end border-top py-1 px-3"><a class="btn btn-primary btn-round waves-effect waves-light" href="https://gamecharts.org/<?php echo($source); ?>/player_count"> More </a></div>
+        	                                <div class="d-flex justify-content-end border-top py-1 px-3"><a class="btn btn-primary btn-round waves-effect waves-light" href="http://gamecharts.local/<?php echo($source); ?>/player_count"> More </a></div>
                 	                    </div><!--end card-body-->
                         	        </div><!--end card-->
 	                            </div><!--end col-->
@@ -503,7 +503,7 @@
                         	                        </tbody>
                                 	            </table>
 	                                        </div>
-        	                                <div class="d-flex justify-content-end border-top py-1 px-3"><a class="btn btn-primary btn-round waves-effect waves-light" href="https://gamecharts.org/<?php echo($source); ?>/player_average"> More </a></div>
+        	                                <div class="d-flex justify-content-end border-top py-1 px-3"><a class="btn btn-primary btn-round waves-effect waves-light" href="http://gamecharts.local/<?php echo($source); ?>/player_average"> More </a></div>
                 	                    </div><!--end card-body-->
                         	        </div><!--end card-->
 	                            </div><!--end col-->
@@ -548,24 +548,24 @@
 
 
         <!-- jQuery  -->
-    <script src="https://gamecharts.org/assets/js/jquery.min.js"></script>
+    <script src="http://gamecharts.local/assets/js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-    <script src="https://gamecharts.org/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://gamecharts.org/assets/js/waves.min.js"></script>
-    <script src="https://gamecharts.org/assets/js/jquery.slimscroll.min.js"></script>
+    <script src="http://gamecharts.local/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="http://gamecharts.local/assets/js/waves.min.js"></script>
+    <script src="http://gamecharts.local/assets/js/jquery.slimscroll.min.js"></script>
 
-    <script src="https://gamecharts.org/assets/plugins/moment/moment.js"></script>
+    <script src="http://gamecharts.local/assets/plugins/moment/moment.js"></script>
 
-    <script src="https://gamecharts.org/assets/plugins/apexcharts/apexcharts.min.js"></script>
-    <script src="https://gamecharts.org/assets/pages/jquery.apexcharts.init.js"></script>
+    <script src="http://gamecharts.local/assets/plugins/apexcharts/apexcharts.min.js"></script>
+    <script src="http://gamecharts.local/assets/pages/jquery.apexcharts.init.js"></script>
 
-    <script src="https://gamecharts.org/assets/plugins/sparklines-chart/jquery.sparkline.min.js"></script>
-    <script src="https://gamecharts.org/assets/pages/jquery.charts-sparkline.js"></script>
+    <script src="http://gamecharts.local/assets/plugins/sparklines-chart/jquery.sparkline.min.js"></script>
+    <script src="http://gamecharts.local/assets/pages/jquery.charts-sparkline.js"></script>
 
     <!-- App js -->
-    <script src="https://gamecharts.org/assets/js/app.js"></script>
-    <script src="https://gamecharts.org/assets/js/searchbox.js"></script>
-    <script src="https://gamecharts.org/assets/js/checkCookie.js"></script>
+    <script src="http://gamecharts.local/assets/js/app.js"></script>
+    <script src="http://gamecharts.local/assets/js/searchbox.js"></script>
+    <script src="http://gamecharts.local/assets/js/checkCookie.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     </body>
 </html>

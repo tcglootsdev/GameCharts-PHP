@@ -30,7 +30,7 @@
 	if (isset($_GET['inicio']) && !empty($_GET['inicio'])) {
 		$fechaOrigen = $_GET['inicio'];
 	}
-    $stores = json_decode(file_get_contents('https://gamecharts.org/data/store.json'));
+    $stores = json_decode(file_get_contents('http://gamecharts.local/data/store.json'));
 	$fechaFinal = '3000-01-01';
 	if (isset($_GET['final']) && !empty($_GET['final'])) {
 		$fechaFinal = $_GET['final'];
@@ -212,11 +212,11 @@
 	<meta name="keywards" content="plyer, game, chart, average, current, playerunknowns, 24-hours, platform, name, steam, idcgames, xbox, current players, average players, game chart, <?php echo($gameinfo_aux[0]->Name);?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	 <!-- App favicon -->
-		<link rel="shortcut icon" href="https://gamecharts.org/assets/images/favicon.ico">
+		<link rel="shortcut icon" href="http://gamecharts.local/assets/images/favicon.ico">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link href="https://gamecharts.org/assets/css/icons.css" rel="stylesheet" type="text/css" />
-        <link href="https://gamecharts.org/assets/css/style.css" rel="stylesheet" type="text/css" />
-		<link href="https://gamecharts.org/assets/css/custom-highcharts.css" rel="stylesheet" type="text/css" />
+        <link href="http://gamecharts.local/assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="http://gamecharts.local/assets/css/style.css" rel="stylesheet" type="text/css" />
+		<link href="http://gamecharts.local/assets/css/custom-highcharts.css" rel="stylesheet" type="text/css" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43282477-5"></script>
 <script>
@@ -249,14 +249,14 @@
              <?php
              foreach($stores as $store) {
                  if ($store->Store == $source){
-                     echo('<li><a href="https://gamecharts.org/'.$store->Store.'"><img src="'.$store->Splash.'"/></a> </li>');
+                     echo('<li><a href="http://gamecharts.local/'.$store->Store.'"><img src="'.$store->Splash.'"/></a> </li>');
                  }
              }
              ?>
         </span>
     <div class="route-top">
-        <a href="https://gamecharts.org">GameCharts</a>&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i>&nbsp;&nbsp;
-        <a href="https://gamecharts.org/<?php echo $source?>"><?php echo $source?></a>&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i>&nbsp;&nbsp;<a href="#"><?php echo($gameinfo_aux[0]->Name); ?></a>
+        <a href="http://gamecharts.local">GameCharts</a>&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i>&nbsp;&nbsp;
+        <a href="http://gamecharts.local/<?php echo $source?>"><?php echo $source?></a>&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i>&nbsp;&nbsp;<a href="#"><?php echo($gameinfo_aux[0]->Name); ?></a>
     </div>
 </div>
 
@@ -491,19 +491,19 @@
 
 <?php include('footer.php'); ?>
 
-<script src="https://gamecharts.org/assets/js/jquery.min.js"></script>
+<script src="http://gamecharts.local/assets/js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-<script src="https://gamecharts.org/assets/js/bootstrap.bundle.min.js"></script>
-<script src="https://gamecharts.org/assets/js/waves.min.js"></script>
-<script src="https://gamecharts.org/assets/js/jquery.slimscroll.min.js"></script>
-<script src="https://gamecharts.org/assets/plugins/moment/moment.js"></script>
-<script src="https://gamecharts.org/assets/plugins/apexcharts/apexcharts.min.js"></script>
-<script src="https://gamecharts.org/assets/pages/jquery.apexcharts.init.js"></script>
-<script src="https://gamecharts.org/assets/plugins/sparklines-chart/jquery.sparkline.min.js"></script>
-<script src="https://gamecharts.org/assets/pages/jquery.charts-sparkline.js"></script>
-<script src="https://gamecharts.org/assets/js/checkCookie.js"></script>
-<script src="https://gamecharts.org/assets/js/app.js"></script>
-<script src="https://gamecharts.org/assets/js/searchbox.js"></script>
+<script src="http://gamecharts.local/assets/js/bootstrap.bundle.min.js"></script>
+<script src="http://gamecharts.local/assets/js/waves.min.js"></script>
+<script src="http://gamecharts.local/assets/js/jquery.slimscroll.min.js"></script>
+<script src="http://gamecharts.local/assets/plugins/moment/moment.js"></script>
+<script src="http://gamecharts.local/assets/plugins/apexcharts/apexcharts.min.js"></script>
+<script src="http://gamecharts.local/assets/pages/jquery.apexcharts.init.js"></script>
+<script src="http://gamecharts.local/assets/plugins/sparklines-chart/jquery.sparkline.min.js"></script>
+<script src="http://gamecharts.local/assets/pages/jquery.charts-sparkline.js"></script>
+<script src="http://gamecharts.local/assets/js/checkCookie.js"></script>
+<script src="http://gamecharts.local/assets/js/app.js"></script>
+<script src="http://gamecharts.local/assets/js/searchbox.js"></script>
 </body>
 
 <script>

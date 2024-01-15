@@ -24,12 +24,12 @@
     $next_page = intval($page) + 1;
     $prev_page = intval($page) - 1;
     $prevPageRel = "";
-    $nextPageRel = "    <link rel=\"next\" href=\"https://gamecharts.org/steam/player_count/$next_page\" />\n";
+    $nextPageRel = "    <link rel=\"next\" href=\"http://gamecharts.local/steam/player_count/$next_page\" />\n";
     if ($page != 1) {
         if ($page == 2) {
-            $prevPageRel = "    <link rel=\"prev\" href=\"https://gamecharts.org/steam/player_count\" />\n";
+            $prevPageRel = "    <link rel=\"prev\" href=\"http://gamecharts.local/steam/player_count\" />\n";
         } else {
-            $prevPageRel = "    <link rel=\"prev\" href=\"https://gamecharts.org/steam/player_count/$prev_page\" />\n";
+            $prevPageRel = "    <link rel=\"prev\" href=\"http://gamecharts.local/steam/player_count/$prev_page\" />\n";
         }
         $titlePageTag = " Page $page";
         $descriptionPageTag = " $titlePageTag for";
@@ -38,7 +38,7 @@
 
     $title = "Game Charts - Search";
     $description = "GameCharts. This page shows games matching searched text.";
-    $canonical = "https://gamecharts.org/$search";
+    $canonical = "http://gamecharts.local/$search";
 
     $baseURL = './data/search/';
     $dataURL = $baseURL . $filename.'.json';
@@ -87,15 +87,15 @@
             <?php
              foreach ($stores as $store) {
                  if ($store->Store == $source) {
-                     echo('<li><a href="https://gamecharts.org/'.$store->Store.'"><img src="'.$store->Splash.'" alt="'.$store->Store.'"/></a> </li>');
+                     echo('<li><a href="http://gamecharts.local/'.$store->Store.'"><img src="'.$store->Splash.'" alt="'.$store->Store.'"/></a> </li>');
                  }
              }
              ?>
         </span>
         <span class="search"><a style="color:white"
-                href="https://gamecharts.org/Search">Search</a></span>
+                href="http://gamecharts.local/Search">Search</a></span>
         <div class="route-top">
-            <a href="https://gamecharts.org">Home</a>&nbsp;&nbsp;
+            <a href="http://gamecharts.local">Home</a>&nbsp;&nbsp;
             <i class="fas fa-angle-double-right"></i>&nbsp;&nbsp;<a href="#">Search</a>
         </div>
     </div>
@@ -204,7 +204,7 @@
 								$data->LastCcu = $gameData[0]['CurrentCcu'];
 								$data->Peak24Hours = $gameData[0]['TopCcu24h'];
 							}
-							$href = "https://gamecharts.org/".$data->Source."/".$data->NameSEO;
+							$href = "http://gamecharts.local/".$data->Source."/".$data->NameSEO;
                                                         ?>
                                                         <tr>
 							    <td><a
@@ -293,25 +293,25 @@
     <?php include('footer.php'); ?>
 
     <!-- jQuery  -->
-    <script src="https://gamecharts.org/assets/js/jquery.min.js"></script>
+    <script src="http://gamecharts.local/assets/js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-    <script src="https://gamecharts.org/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://gamecharts.org/assets/js/waves.min.js"></script>
-    <script src="https://gamecharts.org/assets/js/jquery.slimscroll.min.js"></script>
+    <script src="http://gamecharts.local/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="http://gamecharts.local/assets/js/waves.min.js"></script>
+    <script src="http://gamecharts.local/assets/js/jquery.slimscroll.min.js"></script>
 
-    <script src="https://gamecharts.org/assets/plugins/moment/moment.js"></script>
+    <script src="http://gamecharts.local/assets/plugins/moment/moment.js"></script>
 
-    <script src="https://gamecharts.org/assets/plugins/apexcharts/apexcharts.min.js"></script>
-    <script src="https://gamecharts.org/assets/pages/jquery.apexcharts.init.js"></script>
+    <script src="http://gamecharts.local/assets/plugins/apexcharts/apexcharts.min.js"></script>
+    <script src="http://gamecharts.local/assets/pages/jquery.apexcharts.init.js"></script>
 
-    <script src="https://gamecharts.org/assets/plugins/sparklines-chart/jquery.sparkline.min.js"></script>
-    <script src="https://gamecharts.org/assets/pages/jquery.charts-sparkline.js"></script>
+    <script src="http://gamecharts.local/assets/plugins/sparklines-chart/jquery.sparkline.min.js"></script>
+    <script src="http://gamecharts.local/assets/pages/jquery.charts-sparkline.js"></script>
 
 
     <!-- App js -->
-    <script src="https://gamecharts.org/assets/js/checkCookie.js"></script>
-    <script src="https://gamecharts.org/assets/js/app.js"></script>
-    <script src="https://gamecharts.org/assets/js/searchbox.js"></script>
+    <script src="http://gamecharts.local/assets/js/checkCookie.js"></script>
+    <script src="http://gamecharts.local/assets/js/app.js"></script>
+    <script src="http://gamecharts.local/assets/js/searchbox.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
 </body>

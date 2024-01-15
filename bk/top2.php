@@ -63,15 +63,15 @@
              <?php
              foreach($stores as $store) {
                  if ($store->Store == $source){
-                     echo('<li><a href="https://gamecharts.org/'.$store->Store.'"><img src="'.$store->Splash.'" alt="'.$store->Store.'"/></a> </li>');
+                     echo('<li><a href="http://gamecharts.local/'.$store->Store.'"><img src="'.$store->Splash.'" alt="'.$store->Store.'"/></a> </li>');
                  }
              }
              ?>
         </span>
-        <span class="top-games"><a style="color:white" href="https://gamecharts.org/<?php echo $source; ?>/top">TOP GAMES</a></span>
+        <span class="top-games"><a style="color:white" href="http://gamecharts.local/<?php echo $source; ?>/top">TOP GAMES</a></span>
         <div class="route-top">
-            <a href="https://gamecharts.org">Home</a>&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i>&nbsp;&nbsp;
-            <a href="https://gamecharts.org/<?php echo $source?>"><?php echo $source?></a>&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i>&nbsp;&nbsp;<a href="#">Top</a>
+            <a href="http://gamecharts.local">Home</a>&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i>&nbsp;&nbsp;
+            <a href="http://gamecharts.local/<?php echo $source?>"><?php echo $source?></a>&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i>&nbsp;&nbsp;<a href="#">Top</a>
         </div>
     </div>
 
@@ -143,7 +143,7 @@
                                                         ?>
                                                         <tr>
                                                             <td><?php echo $index++?>.</td>
-                                                            <td><a style="color:#303030;font-weight:500" href="https://gamecharts.org/<?php echo($source); ?>/<?php echo($data->NameSEO); ?>">
+                                                            <td><a style="color:#303030;font-weight:500" href="http://gamecharts.local/<?php echo($source); ?>/<?php echo($data->NameSEO); ?>">
                                                                 <img class="img-thumnail" src="<?php echo($data->Splash)?>"  alt="<?php echo($data->Store)?>"/><?php echo($data->Name); ?></a></td>
                                                             <td class="center"><?php echo number_format($data->LastCcu)?></td>
                                                             <!-- <td>
@@ -175,7 +175,7 @@
                             <div class="col-12" style="text-align: right">
                                 <?php
                                 if ($page >= '2') {
-                                    echo('<a href="https://gamecharts.org/'.$source.'/top/'.($page-1).'">Previous</a>');
+                                    echo('<a href="http://gamecharts.local/'.$source.'/top/'.($page-1).'">Previous</a>');
                                     if(isset($top_data) && count($top_data)) {
                                         echo(' or ');
                                     }
@@ -184,7 +184,7 @@
                                     }
                                 }
                                 if(isset($top_data) && count($top_data)) {
-                                    echo(' <a href="https://gamecharts.org/'.$source.'/top/'.($page+1).'">Next</a> page');
+                                    echo(' <a href="http://gamecharts.local/'.$source.'/top/'.($page+1).'">Next</a> page');
                                 }
                                 ?>
 
@@ -197,11 +197,11 @@
                             <div id="top_game_slider" class="top_game_slider">
                                 <?php foreach($top_data as $data):?>
                                 	
-                                    <?php $i_game = json_decode(file_get_contents('https://gamecharts.org/data/' . $source . '/games_seo/' . $data->NameSEO . '/gameinfo.json'));?>
+                                    <?php $i_game = json_decode(file_get_contents('http://gamecharts.local/data/' . $source . '/games_seo/' . $data->NameSEO . '/gameinfo.json'));?>
     
     								<div class="row ml-1 mr-1">
                                         <div style="display: inline-block;padding: 0" class="col-12 col-md-5">
-                                             <a href="https://gamecharts.org/<?php echo($source); ?>/<?php echo($data->NameSEO); ?>"><img src="<?php echo ($i_game[0]->Splash);?>" alt="<?php echo($data->Name);?>" /></a>
+                                             <a href="http://gamecharts.local/<?php echo($source); ?>/<?php echo($data->NameSEO); ?>"><img src="<?php echo ($i_game[0]->Splash);?>" alt="<?php echo($data->Name);?>" /></a>
                                         </div>
     
                                         <div style="display: inline-block;padding: 0; height: 215px; overflow-y: scroll;" class="col-sm-12 col-md-7">
@@ -279,7 +279,7 @@
                                                 ?>
                                                 <tr>
                                                     <td><?php echo $index++?>.</td>
-                                                    <td><a style="color:#303030;font-weight:500" href="https://gamecharts.org/<?php echo($source); ?>/<?php echo($data->NameSEO); ?>"><?php echo($data->Name); ?></a></td>
+                                                    <td><a style="color:#303030;font-weight:500" href="http://gamecharts.local/<?php echo($source); ?>/<?php echo($data->NameSEO); ?>"><?php echo($data->Name); ?></a></td>
                                                     <td class="center"><?php echo number_format($data->LastCcu)?></td>
                                                     <!-- <td>
                                                         <div id="sparkline2" class="text-center"></div>
@@ -308,7 +308,7 @@
                     <div class="row col-12" style="text-align: center;">
                         <?php
                         if ($page >= '2') {
-                            echo('<a href="https://gamecharts.org/'.$source.'/top/'.($page-1).'">Previous</a>');
+                            echo('<a href="http://gamecharts.local/'.$source.'/top/'.($page-1).'">Previous</a>');
                             if(isset($top_data) && count($top_data)) {
                                 echo(' or ');
                             }
@@ -317,7 +317,7 @@
                             }
                         }
                         if(isset($top_data) && count($top_data)) {
-                            echo(' <a href="https://gamecharts.org/'.$source.'/top/'.($page+1).'">Next</a> page');
+                            echo(' <a href="http://gamecharts.local/'.$source.'/top/'.($page+1).'">Next</a> page');
                         }
                         ?>
                     </div>
@@ -344,25 +344,25 @@
     <?php include('footer.php'); ?>
 
         <!-- jQuery  -->
-    <script src="https://gamecharts.org/assets/js/jquery.min.js"></script>
+    <script src="http://gamecharts.local/assets/js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-    <script src="https://gamecharts.org/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://gamecharts.org/assets/js/waves.min.js"></script>
-    <script src="https://gamecharts.org/assets/js/jquery.slimscroll.min.js"></script>
+    <script src="http://gamecharts.local/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="http://gamecharts.local/assets/js/waves.min.js"></script>
+    <script src="http://gamecharts.local/assets/js/jquery.slimscroll.min.js"></script>
 
-    <script src="https://gamecharts.org/assets/plugins/moment/moment.js"></script>
+    <script src="http://gamecharts.local/assets/plugins/moment/moment.js"></script>
 
-    <script src="https://gamecharts.org/assets/plugins/apexcharts/apexcharts.min.js"></script>
-    <script src="https://gamecharts.org/assets/pages/jquery.apexcharts.init.js"></script>
+    <script src="http://gamecharts.local/assets/plugins/apexcharts/apexcharts.min.js"></script>
+    <script src="http://gamecharts.local/assets/pages/jquery.apexcharts.init.js"></script>
 
-    <script src="https://gamecharts.org/assets/plugins/sparklines-chart/jquery.sparkline.min.js"></script>
-    <script src="https://gamecharts.org/assets/pages/jquery.charts-sparkline.js"></script>
+    <script src="http://gamecharts.local/assets/plugins/sparklines-chart/jquery.sparkline.min.js"></script>
+    <script src="http://gamecharts.local/assets/pages/jquery.charts-sparkline.js"></script>
 
 
     <!-- App js -->
-    <script src="https://gamecharts.org/assets/js/checkCookie.js"></script>
-    <script src="https://gamecharts.org/assets/js/app.js"></script>
-    <script src="https://gamecharts.org/assets/js/searchbox.js"></script>
+    <script src="http://gamecharts.local/assets/js/checkCookie.js"></script>
+    <script src="http://gamecharts.local/assets/js/app.js"></script>
+    <script src="http://gamecharts.local/assets/js/searchbox.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
     </body>

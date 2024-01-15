@@ -3,7 +3,7 @@ ini_set('display_errors', false);
 
 $title = "Game Charts - Top and Trending Games Statistics";
 $description = "GameCharts. This page shows Top Games and Trending of Games by current players or average players. You can see the summary of individual game of each platfrom.";
-$canonical = "https://gamecharts.org";
+$canonical = "http://gamecharts.local";
 $trending = array();
 $trending_average = array();
 $topdata = array();
@@ -108,7 +108,7 @@ $stores = $aux;
         <!-- <span class="game-platforms-menu col-12 col-md-6"> -->
         <?php
         foreach ($stores as $store) {
-            echo('<div class="col-6 col-md-2 text-center"><a href="https://gamecharts.org/'.$store->Store.'"><img src="'.$store->Splash.'" alt="'.$store->Store.'" style="max-width:100%; max-height:45px;"/></a></div>');
+            echo('<div class="col-6 col-md-2 text-center"><a href="http://gamecharts.local/'.$store->Store.'"><img src="'.$store->Splash.'" alt="'.$store->Store.'" style="max-width:100%; max-height:45px;"/></a></div>');
         }
         ?>
         <!-- </span> -->

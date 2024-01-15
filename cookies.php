@@ -15,25 +15,25 @@
     <title>Game Charts - Cookies</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta  name="description" content="GameCharts cookies policy"/>
-    <link rel="canonical" href="https://gamecharts.org/cookies" />
+    <link rel="canonical" href="http://gamecharts.local/cookies" />
 
     <meta name = "twitter:title" content="Game Charts - Cookies">
     <meta name = "twitter:card" content="summary">
     <meta name = "twitter:site" content="@gamecharts">
     <meta name = "twitter:creator" content="@gamecharts">
     <meta name = "twitter:description" content="GameCharts cookies policy"/>
-    <meta name = "twitter:image" content="https://gamecharts.org/assets/images/logo-1.png"/>
+    <meta name = "twitter:image" content="http://gamecharts.local/assets/images/logo-1.png"/>
     <meta property = "og:type" content="website" />
-    <meta property = "og:url" content="https://gamecharts.org/cookies"/>
-    <meta property = "og:image" content="https://gamecharts.org/assets/images/logo-1.png"/>
+    <meta property = "og:url" content="http://gamecharts.local/cookies"/>
+    <meta property = "og:image" content="http://gamecharts.local/assets/images/logo-1.png"/>
     <meta property = "og:site_name" content="Gamecharts"/>
     <meta property = "og:title" content="Game Charts - Cookies" />
     <meta property = "og:description" content="GameCharts cookies policy"/>     <!-- App favicon -->
-        <link rel="shortcut icon" href="https://gamecharts.org/assets/images/favicon.ico">
+        <link rel="shortcut icon" href="http://gamecharts.local/assets/images/favicon.ico">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link href="https://gamecharts.org/assets/css/icons.css" rel="stylesheet" type="text/css" />
-        <link href="https://gamecharts.org/assets/css/style.css" rel="stylesheet" type="text/css" />
-        <link href="https://gamecharts.org/assets/css/custom-highcharts.css" rel="stylesheet" type="text/css" />
+        <link href="http://gamecharts.local/assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="http://gamecharts.local/assets/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="http://gamecharts.local/assets/css/custom-highcharts.css" rel="stylesheet" type="text/css" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43282477-5"></script>
 <script>
@@ -69,7 +69,7 @@
             <div class="content">
 <h1>Cookie Policy for gamecharts</h1>
 
-<p>This is the Cookie Policy for gamecharts, accessible from https://gamecharts.org</p>
+<p>This is the Cookie Policy for gamecharts, accessible from http://gamecharts.local</p>
 
 <p><strong>What Are Cookies</strong></p>
 
@@ -146,18 +146,18 @@
 
 <?php include('footer.php'); ?>
 
-<script src="https://gamecharts.org/assets/js/jquery.min.js"></script>
+<script src="http://gamecharts.local/assets/js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-<script src="https://gamecharts.org/assets/js/bootstrap.bundle.min.js"></script>
-<script src="https://gamecharts.org/assets/js/waves.min.js"></script>
-<script src="https://gamecharts.org/assets/js/jquery.slimscroll.min.js"></script>
-<script src="https://gamecharts.org/assets/plugins/moment/moment.js"></script>
-<script src="https://gamecharts.org/assets/plugins/apexcharts/apexcharts.min.js"></script>
-<script src="https://gamecharts.org/assets/pages/jquery.apexcharts.init.js"></script>
-<script src="https://gamecharts.org/assets/plugins/sparklines-chart/jquery.sparkline.min.js"></script>
-<script src="https://gamecharts.org/assets/pages/jquery.charts-sparkline.js"></script>
+<script src="http://gamecharts.local/assets/js/bootstrap.bundle.min.js"></script>
+<script src="http://gamecharts.local/assets/js/waves.min.js"></script>
+<script src="http://gamecharts.local/assets/js/jquery.slimscroll.min.js"></script>
+<script src="http://gamecharts.local/assets/plugins/moment/moment.js"></script>
+<script src="http://gamecharts.local/assets/plugins/apexcharts/apexcharts.min.js"></script>
+<script src="http://gamecharts.local/assets/pages/jquery.apexcharts.init.js"></script>
+<script src="http://gamecharts.local/assets/plugins/sparklines-chart/jquery.sparkline.min.js"></script>
+<script src="http://gamecharts.local/assets/pages/jquery.charts-sparkline.js"></script>
 <script src="assets/js/checkCookie.js"></script>
-<script src="https://gamecharts.org/assets/js/app.js"></script>
-<script src="https://gamecharts.org/assets/js/searchbox.js"></script>
+<script src="http://gamecharts.local/assets/js/app.js"></script>
+<script src="http://gamecharts.local/assets/js/searchbox.js"></script>
 </body>
 </html>

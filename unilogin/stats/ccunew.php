@@ -66,7 +66,7 @@ if (isset($_GET['to']) && !empty($_GET['to'])) {
     $toData_time = mktime(0,0,0,$aux[1],$aux[0],$aux[2]);
 }
 
-$dataURL = "https://gamecharts.org/data/idcgames/games/".$appid."/";
+$dataURL = "http://gamecharts.local/data/idcgames/games/".$appid."/";
 #########################################################################
 
 $timeControl['params'] = time();

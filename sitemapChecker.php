@@ -108,7 +108,7 @@ if ($sitemapFile === FALSE){
 	die();
 }
 $sitesArray = array();
-$siteBase = "https://gamecharts.org";
+$siteBase = "http://gamecharts.local";
 addSiteToSitemap ($sitemapFile,$sitesArray,$siteBase,"./index.php","1.0","");
 addSiteToSitemap ($sitemapFile,$sitesArray,$siteBase."/privacy","./privacy.php","0.5","");
 addSiteToSitemap ($sitemapFile,$sitesArray,$siteBase."/about","./about.php","0.5","");

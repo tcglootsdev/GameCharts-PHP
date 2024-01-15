@@ -98,7 +98,7 @@ $stores = $aux;
     <!-- <span class="game-platforms-menu col-12 col-md-6"> -->
         <?php
         foreach($stores as $store) {
-          echo('<div class="col-6 col-md-2 text-center"><a href="https://gamecharts.org/'.$store->Store.'"><img src="'.$store->Splash.'" alt="'.$store->Store.'" style="max-width:100%; max-height:45px;"/></a></div>');
+          echo('<div class="col-6 col-md-2 text-center"><a href="http://gamecharts.local/'.$store->Store.'"><img src="'.$store->Splash.'" alt="'.$store->Store.'" style="max-width:100%; max-height:45px;"/></a></div>');
         }
         ?>
     <!-- </span> -->
@@ -212,7 +212,7 @@ $stores = $aux;
                         <div class="col-12-add">
                             <div id="trending_game_slider" class="trending_game_slider">
                                 <?php foreach($trending as $data):?>
-                                    <?php $i_game = json_decode(file_get_contents('https://gamecharts.org/data/' . $data['store'] . '/games_seo/' . $data['app_id'] . '/gameinfo.json'));?>
+                                    <?php $i_game = json_decode(file_get_contents('http://gamecharts.local/data/' . $data['store'] . '/games_seo/' . $data['app_id'] . '/gameinfo.json'));?>
 
                                     <div class="row ml-1 mr-1">
                                         <div style="display: inline-block;padding: 0" class="col-12 col-md-5">
@@ -326,7 +326,7 @@ $stores = $aux;
                         <div class="col-12">
                             <div id="top_game_slider" class="top_game_slider">
                                 <?php foreach($topdata as $data):?>
-                                    <?php $i_game = json_decode(file_get_contents('https://gamecharts.org/data/' . $data->Store . '/games_seo/' . $data->NameSEO . '/gameinfo.json'));?>
+                                    <?php $i_game = json_decode(file_get_contents('http://gamecharts.local/data/' . $data->Store . '/games_seo/' . $data->NameSEO . '/gameinfo.json'));?>
 
                                     <div class="row ml-1 mr-1">
                                         <div style="display: inline-block;padding: 0" class="col-12 col-md-5">
@@ -405,7 +405,7 @@ $stores = $aux;
                         <div class="col-12">
                             <div id="trending_game_average_slider" class="trending_game_slider">
                                 <?php foreach($trending_average as $data):?>
-                                    <?php $i_game = json_decode(file_get_contents('https://gamecharts.org/data/' . $data['store'] . '/games_seo/' . $data['app_id'] . '/gameinfo.json'));?>
+                                    <?php $i_game = json_decode(file_get_contents('http://gamecharts.local/data/' . $data['store'] . '/games_seo/' . $data['app_id'] . '/gameinfo.json'));?>
 
                                     <div class="row ml-1 mr-1">
                                         <div style="display: inline-block;padding: 0" class="col-12 col-md-5">
@@ -492,7 +492,7 @@ $stores = $aux;
                         <div class="col-12">
                             <div id="top_game_average_slider" class="top_game_slider">
                                 <?php foreach($topdata_average as $data):?>
-                                    <?php $i_game = json_decode(file_get_contents('https://gamecharts.org/data/' . $data->Store . '/games_seo/' . $data->NameSEO . '/gameinfo.json'));?>
+                                    <?php $i_game = json_decode(file_get_contents('http://gamecharts.local/data/' . $data->Store . '/games_seo/' . $data->NameSEO . '/gameinfo.json'));?>
     
                                     <div class="row ml-1 mr-1">
                                         <div style="display: inline-block;padding: 0" class="col-12 col-md-5">
@@ -765,7 +765,7 @@ $stores = $aux;
                       <h2 class="ml-4">Trending Games</h2>
                         <div id="trending_game_slider_mobile" class="trending_game_slider_mobile">
                             <?php foreach($trending as $data):?>
-                                <?php $i_game = json_decode(file_get_contents('https://gamecharts.org/data/' . $data['store'] . '/games_seo/' . $data['app_id'] . '/gameinfo.json'));?>
+                                <?php $i_game = json_decode(file_get_contents('http://gamecharts.local/data/' . $data['store'] . '/games_seo/' . $data['app_id'] . '/gameinfo.json'));?>
 
                                 <div class="row ml-4 mr-2">
                                     <div style="display: block; width: 100%" >
@@ -789,7 +789,7 @@ $stores = $aux;
                       <h2 class="ml-4">Top Games</h2>
                         <div id="top_game_slider_mobile" class="top_game_slider_mobile">
                             <?php foreach($topdata as $data):?>
-                                <?php $i_game = json_decode(file_get_contents('https://gamecharts.org/data/' . $data->Store . '/games_seo/' . $data->NameSEO . '/gameinfo.json'));?>
+                                <?php $i_game = json_decode(file_get_contents('http://gamecharts.local/data/' . $data->Store . '/games_seo/' . $data->NameSEO . '/gameinfo.json'));?>
 
                                 <div class="row ml-4 mr-2">
                                     <div style="display: block; width: 100%" >

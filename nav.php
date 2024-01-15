@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-gradient-green fixed-top">
-	<a href="https://gamecharts.org"><img src="https://gamecharts.org/assets/images/logo-1.png" class="logoGameCharts" alt="Game Charts logo"></a>
+	<a href="http://gamecharts.local"><img src="http://gamecharts.local/assets/images/logo-1.png" class="logoGameCharts" alt="Game Charts logo"></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
 	<span class="navbar-toggler-icon"></span>
 	</button>
@@ -22,7 +22,7 @@
 				         var value = document.getElementById("searchBox").value;
 		
 					 if (value.length >= 2){
-						window.location.href = "https://gamecharts.org/search/" + value.toLowerCase ();
+						window.location.href = "http://gamecharts.local/search/" + value.toLowerCase ();
 					 }
 				      };
 				   };

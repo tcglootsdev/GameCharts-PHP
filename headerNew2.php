@@ -15,10 +15,10 @@
     <meta name = "twitter:site" content="@gamecharts">
     <meta name = "twitter:creator" content="@gamecharts">
     <meta name = "twitter:description" content="<?php echo $description;?>"/>
-    <meta name = "twitter:image" content="https://gamecharts.org/assets/images/logo-1.png"/>
+    <meta name = "twitter:image" content="http://gamecharts.local/assets/images/logo-1.png"/>
     <meta property = "og:type" content="website" />
-    <meta property = "og:url" content="https://gamecharts.org"/>
-    <meta property = "og:image" content="https://gamecharts.org/assets/images/logo-1.png"/>
+    <meta property = "og:url" content="http://gamecharts.local"/>
+    <meta property = "og:image" content="http://gamecharts.local/assets/images/logo-1.png"/>
     <meta property = "og:site_name" content="Gamecharts"/>
     <meta property = "og:title" content="Game Charts - <?php echo $title;?>" />
     <meta property = "og:description" content="<?php echo $description;?>"/>
@@ -27,9 +27,9 @@
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
     <!-- App css -->
-    <link href="https://gamecharts.org/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://gamecharts.org/assets/css/icons.css" rel="stylesheet" type="text/css" />
-    <link href="https://gamecharts.org/assets/css/styleNew.css" rel="stylesheet" type="text/css" />
+    <link href="http://gamecharts.local/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://gamecharts.local/assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="http://gamecharts.local/assets/css/styleNew.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
 	<!--
     <script data-ad-client="ca-pub-9457982685178503" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -46,5 +46,5 @@
   gtag('config', 'UA-43282477-5');
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script data-ad-client="ca-pub-2433076550762661" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!--<script data-ad-client="ca-pub-2433076550762661" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
 </head>
