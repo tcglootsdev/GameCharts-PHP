@@ -1,0 +1,85 @@
+<?php
+
+	ini_set('display_errors',false);
+    date_default_timezone_set("Europe/Madrid");
+    $dataURL = './data/';
+    $ahora = time();
+    $hoy = date("dmy");
+
+    //	CARGA DE PARAMETROS
+    if (isset($_GET['dataURL']) && !empty($_GET['dataURL'])) {
+        $dataURL = $_GET['dataURL'];
+    } else {
+
+        $appid = '0';
+        if (isset($_GET['appid']) && !empty($_GET['appid'])) {
+            $appid = strtolower($_GET['appid']);
+        }
+
+        $source = 'default';
+        if (isset($_GET['source']) && !empty($_GET['source'])) {
+            $source = strtolower($_GET['source']);
+        }
+        $dataURL .= $source . "/" . $appid . "/";
+    }
+
+    $fechaOrigen = '2020-01-01';
+    if (isset($_GET['inicio']) && !empty($_GET['inicio'])) {
+        $fechaOrigen = $_GET['inicio'];
+    }
+
+    $fechaFinal = '2021-01-01';
+    if (isset($_GET['final']) && !empty($_GET['final'])) {
+        $fechaFinal = $_GET['final'];
+    }
+    
+    $page = '';
+    if (isset($_GET['page']) && !empty($_GET['page'])) {
+    	$page = strtolower($_GET['page']);
+    }
+    
+    // CONTROLER
+	if (isset($source) && !empty($source)) {
+		if (isset($appid) && !empty($appid)) {
+			if (is_numeric($appid)) {
+				$result = file_get_contents('https://gamecharts.org/game.php?source='.$source.'&appid='.$appid);
+			}
+			else if ($appid == 'top') {
+				$result = file_get_contents('https://gamecharts.org/top.php?source='.$source.'&type=ccu&page='.$page);
+			}
+			else if ($appid == 'average') {
+				$result = file_get_contents('https://gamecharts.org/top.php?source='.$source.'&type=avg&page='.$page);
+			}
+			else if ($appid == 'trending') {
+				$result = file_get_contents('https://gamecharts.org/trending.php?source='.$source);
+			}
+			else {
+                //echo $appid; die();
+                $result = file_get_contents('https://gamecharts.org/game.php?source='.$source.'&nameseo='.$appid);
+				//$result = file_get_contents('https://gamecharts.org/main.php?source='.$source);
+			}
+		}
+		else {
+
+			if (empty($source) || $source=='default') {
+				$result = file_get_contents('https://gamecharts.org/index.php');
+			}
+            else if ($source == 'about') {
+                $result = file_get_contents('https://gamecharts.org/about.php');
+            }
+            else if ($source == 'privacy') {
+                $result = file_get_contents('https://gamecharts.org/privacy.php');
+            }
+            else if ($source == 'cookies') {
+                $result = file_get_contents('https://gamecharts.org/cookies.php');
+            }
+			else {
+				$result = file_get_contents('https://gamecharts.org/main.php?source='.$source);
+			}
+		}
+    }
+    else {
+    	$result = file_get_contents('https://gamecharts.org/index.php');
+    }
+
+    echo($result);
