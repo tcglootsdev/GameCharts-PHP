@@ -37,7 +37,7 @@
     $next_page = intval($page) + 1;
     $prev_page = intval($page) - 1;
     $prevPageRel = "";
-    $nextPageRel = "    <link rel=\"next\" href=\"http://gamecharts.local/steam/player_count/$next_page\" />\n";
+        $nextPageRel = "    <link rel=\"next\" href=\"http://gamecharts.local/steam/player_count/$next_page\" />\n";
     if ($page != 1){
 	if ($page == 2){
 		$prevPageRel = "    <link rel=\"prev\" href=\"http://gamecharts.local/steam/player_count\" />\n";
